@@ -1,0 +1,120 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8"/>
+		<title>个人简历</title>
+		<link rel="stylesheet" href="../css/my resume.css"/>
+		<link rel="stylesheet" href="../Font Awesome/css/font-awesome.css"/>
+		
+	</head>
+	
+	<body>
+		<a name="basic"></a>
+		<div class="container">
+			<div class="top_right">
+				戳我 :)
+				<div class="top_right_div">
+					<ul style="margin:0px;padding:0px;">
+						<li class="li"><a href="#basic">基本信息</a></li>
+						<li class="li"><a href="#edu">教育背景</a></li>
+						<li class="li"><a href="#hobby">兴趣爱好</a></li>
+						<li class="li">技能小概</li>
+						<li class="li">荣誉证书</li>
+						<li class="li">项目实践</li>
+						<li class="li">自我评价</li>
+					</ul>
+				</div>
+			</div>
+			
+			<div class="img">
+				<div class="img_text">
+					&nbsp;&nbsp;张江英
+				</div>
+			</div>
+			<div class="basic_information">	
+				<ul style="margin:0px;padding:0px;">
+					<li class="basic_information_li">求职意向：Web前端工程师</li>
+					<a name="edu"></a>
+					<li class="basic_information_li">性别：女&nbsp;&nbsp;&nbsp;&nbsp;年龄：22</li>
+					<li class="basic_information_li">现居地址：杭州江干区</li>
+					<li class="basic_information_li">电话：12345678912&nbsp;&nbsp;&nbsp;&nbsp;邮箱：*****@163.com</li>
+				</ul>
+			</div>
+			<br/><br/>
+			<div class="edu">       <!--教育背景-->
+				&nbsp;&nbsp;<i class="fa fa-spinner fa-lg fa-spin"></i>&nbsp;&nbsp;教育背景<br/><br/>
+				<div class="edu_div">
+					<img src="../images/zl.jpg" class="edu_div_img_zl"/><br/><br/>
+					<p style="text-align:center">毕业于：
+						<a href="https://baike.baidu.com/item/%E6%B5%99%E6%B1%9F%E7%90%86%E5%B7%A5%E5%A4%A7%E5%AD%A6/328416?fr=aladdin" 
+						target="_blank">浙江理工大学</a></p>
+				</div>
+				<div class="edu_div">
+					<div class=edu_div_2>
+						<div class="edu_div_2_stage">
+							<div class="edu_div_2_item front" style="background-color:#fdeca6">
+								<h6>啦啦啦，你是我的小青蛙！</h6>
+							</div>
+							<div class="edu_div_2_item back" style="background-color:#ffc9da">
+								<p>从前有座山，山上有座庙...</p>
+							</div>
+							<div class="edu_div_2_item left" style="background-color:#8cfffb">
+								<p style="line-height:100px;font-size:8px;text-align:center">***呱呱呱***</p>
+							</div>
+							<div class="edu_div_2_item right" style="background-color:#ffab72">
+								<p style="line-height:100px;font-size:8px;margin-left:20px;">天天好心情:)</p>
+							</div>
+							<div class="edu_div_2_item top" style="background-color:#d9ff64">
+								<h1 style="margin-left:30px;margin-bottom:20px">:)</h1>
+							</div>
+							<div class="edu_div_2_item bottom" style="background-color:#7f7f7f">
+								<h5 style="margin-left:30px">嘻嘻</h5>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="edu_div">
+					<div class="edu_div_31">
+						院系：信息学院
+					</div>
+					<div class="edu_div_32">
+						专业：电子信息工程
+					</div>
+				</div>
+			</div>
+			<div class="hobby">       <!--兴趣爱好-->
+				<a name="hobby"></a>
+				<div class="hobby_text_show">——&nbsp;我的兴趣爱好&nbsp;——</div>
+				<div class="hobby_bottom">
+					<div class="hobby_bottom_item">
+						
+					</div>
+					<div class="hobby_bottom_item">
+						
+					</div>
+					<div class="hobby_bottom_item">
+						
+					</div>
+					<div class="hobby_bottom_item">
+						
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<script type="text/javascript">    
+			window.onload = function(){    <!--实现字体逐个显示，类似于打印的效果!-->
+				var index=0;
+				var w = document.getElementById('word');     <!--此id对应的标签写文字 display:none-->
+				var s = document.getElementById('show');
+				timer = window.setInterval(function(){
+					s.innerHTML = w.innerHTML.substring(0,index);
+					index++;
+					if(s.innerHTML == w.innerHTML){
+						index = 0;
+					}
+				},500);
+			}
+		</script>
+	</body>
+</html>

@@ -1,0 +1,215 @@
+@charset "utf-8";
+html,body{
+	margin:0px;
+	padding:0px;
+}
+.container{
+	width:1200px;
+	height:1500px;
+	position:absolute;
+	margin-top:0px;
+	margin-left:83px;
+	background-color:#ededed;
+}
+.top_right{
+	width:60px;
+	line-height:20px;
+	text-align:center;
+	position:fixed;
+	top:20px;
+	left:1200px;
+	background-color:#5ebce6;
+	z-index:1;
+}
+.top_right:hover{
+	background-color:#a9a9a9;
+}
+.top_right:hover .top_right_div{
+	display:block;
+}
+.top_right_div{
+	display:none;
+	width:100px;
+	height:285px;
+	position:fixed;
+	left:1160px;
+	top:41px;
+	background-color:#00a8f3;
+	z-index:2;
+}
+.top_right_div:hover .li{
+	background-color:#a9a9a9;
+}
+.li{
+	list-style:none;
+	text-align:center;
+	line-height:40px;
+	border-bottom:1px solid #fff;
+}
+.img{
+	width:1200px;
+	height:195px;
+	position:absolute;
+	top:200px;
+	background-image:url("../images/resume1.jpg");
+}
+.img_text{
+	position:absolute;
+	margin-top:122px;
+	margin-left:282px;
+	width:100px;
+	height:30px;
+	line-height:30px;
+	background-color:#fff;
+}
+.basic_information{
+	width:1200px;
+	height:180px;
+	margin-top:480px;
+	text-align:center;
+}
+.basic_information_li{
+	list-style:none;
+	line-height:40px;
+}
+.edu{
+	width:1200px;
+	height:400px;
+	background-color:#fdeca6;
+}
+.edu_div{
+	margin-left:75px;
+	width:300px;
+	height:300px;
+	float:left;
+	background-color:#f9f2d4;
+}
+.edu_div_img_zl{
+	width:280px;
+	height:auto;
+	margin-left:10px;
+	margin-top:30px;
+	animation:img 6s linear infinite;
+}
+@keyframes img{
+	0%{transform:scale(0.8,0.8);}
+	50%{transform:scale(1.05,1.05);}
+	100%{transform:scale(0.8,0.8);}
+}
+
+.edu_div_2{
+	position:absolute;
+	margin-top:100px;
+	margin-left:100px;
+	width:100px;
+	height:100px; 
+}
+.edu_div_2_stage{    /*转动六面体的舞台*/
+	width:100px;
+	height:100px; 
+	-webkit-perspective:8000px;
+	transform-style:preserve-3d;
+	animation:spin 6s linear infinite;
+	animation-fill-mode:forwards; 
+}
+.edu_div_2_item{    /*转动六面体的子元素*/
+	position:absolute;
+	width:100px;
+	height:100px;
+}
+.front{
+	transform:translateZ(50px);
+}
+.back{
+	transform:rotateY(180deg) translateZ(50px);
+}
+.left{
+	transform:rotateY(-90deg) translateZ(50px);
+}
+.right{
+	transform:rotateY(90deg) translateZ(50px);
+}
+.top{
+	transform:rotateX(90deg) translateZ(50px);
+}
+.bottom{
+	transform:rotateX(-90deg) translateZ(50px);
+}
+@keyframes spin{
+	0%{transform:rotateY(0deg) rotateX(0deg) rotateZ(0deg);}
+	20%{transform:rotateY(90deg) rotateX(0deg) rotateZ(90deg);}
+	40%{transform:rotateY(180deg) rotateX(0deg) rotateZ(0deg);}
+	60%{transform:rotateY(270deg) rotateX(0deg) rotateZ(0deg);}
+	80%{transform:rotateY(180deg) rotateX(90deg) rotateZ(90deg);}
+	100%{transform:rotateY(90deg) rotateX(180deg) rotateZ(180deg);}
+	
+}
+	
+.edu_div_31{
+	position:absolute;
+	margin-left:50px;
+	margin-top:10px;
+	width:200px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border:2px solid #00a8f3;
+	animation:s 6s linear infinite;
+}
+.edu_div_32{
+	position:absolute;
+	margin-left:50px;
+	margin-top:250px;
+	width:200px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	border:2px solid #00a8f3;
+	animation:t 6s linear infinite;
+}
+@keyframes s{
+	0%{transform:translateY(0px);}
+	50%{transform:translateY(100px);}
+	100%{transform:translateY(0px);}
+}
+@keyframes t{
+	0%{transform:translateY(0px);}
+	50%{transform:translateY(-100px);}
+	100%{transform:translateY(0px);}
+}
+
+.hobby{
+	width:1200px;
+	height:630px;
+	background-color:#d0fffd;
+}
+.hobby_text_show{
+	position:absolute;
+	margin-left:10px;
+	margin-top:10px;
+	width:300px;
+	height:40px;
+	line-height:40px;
+	text-align:center;
+	animation:hobby_text_show 20s linear infinite;
+}
+@keyframes hobby_text_show{
+	0%{transform:translateX(0px);}
+	50%{transform:translateX(900px);}
+	100%{transform:translateX(-10px);}
+}
+.hobby_bottom{
+	position:absolute;
+	margin-top:50px;
+	width:1200px;
+	height:590px;
+	background-color:#f0f0f0;
+}
+.hobby_bottom_item{
+	margin-left:10px;
+	margin-bottom:10px;
+	width:585px;
+	height:280px;
+	float:left;
+	background-color:#ebffad;
+}
